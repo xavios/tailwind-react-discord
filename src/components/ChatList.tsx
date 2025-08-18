@@ -29,21 +29,45 @@ const ChatList = () => {
         <h3 className='p-2 pl-5'>
           <span className='pr-2'>&#9660;</span>Summonners Rift
         </h3>
-        <ul className='pl-8'>
+        <ul className='pl-8 pr-3'>
           <li className='pt-2'>Trion</li>
           <li className='pt-2'>Valaineral</li>
         </ul>
         <h3 className='p-2 pl-5'>
           <span className='pr-2'>&#9660;</span>T13 Raids
         </h3>
-        <ul className='pl-8'>
-          <li className='pt-2'>ArtisticPaw</li>
+        <ul className='pl-8 pr-3'>
+          <li className='pt-2 flex justify-between'>
+            <span>ArtisticPaw</span>
+            <span className='grow-0'>
+              <span className='p-1 text-gray-500'>🎙︎</span>
+              <span className='p-1'>🎧︎</span>
+            </span>
+          </li>
           <li className='pt-2'>MysteryIsis</li>
           <li className='pt-2'>PetiteSprite</li>
-          <li className='pt-2'>ShiftySaturn</li>
+          <li className='pt-2 flex justify-between'>
+            <span>ShiftySaturn</span>
+            <span className='grow-0'>
+              <span className='p-1'>🎧︎</span>
+            </span>
+          </li>
         </ul>
       </div>
-      <div className='flex-grow-0 bg-gray-800 p-3'>Cherukiki</div>
+      <div className='flex flex-grow-0 bg-gray-800 p-3 justify-between'>
+        <span>Cherukiki</span>
+        <span className='grow-0 hover:cursor-pointer'>
+          <ul className='flex text-gray-500 bg-gray-900 rounded'>
+            <li className='p-1 border-r-2 w-8 text-center hover:bg-gray-700'>
+              🎙︎
+            </li>
+            <li className='p-1 w-8 text-center hover:bg-gray-700'>🎧︎</li>
+            <li className='p-1 border-l-2 w-8 text-center hover:bg-gray-700'>
+              ⚙
+            </li>
+          </ul>
+        </span>
+      </div>
     </div>
   );
 };
