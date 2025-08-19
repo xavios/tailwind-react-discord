@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <>
+    <div className='overflow-hidden'>
       <div className='flex flex-row flex-nowrap'>
         <NavBar></NavBar>
         <div className='flex-auto flex'>
@@ -13,7 +13,7 @@ function App() {
           <ChatWindow></ChatWindow>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
